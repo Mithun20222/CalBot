@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalBot - Minimalist Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0d0d0d;
+            color: #f0f0f0;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .container {
+            max-width: 80vw;
+            margin: auto;
+            position: relative;
+        }
+
+        .navbar {
+            display: flex;
+            height: 67px;
+            align-items: center;
+        }
+
+        .navbar li {
+            list-style: none;
+            margin: 0 12px;
+            cursor: pointer;
+            font-weight: 700;
+            color: #00ffff;
+            transition: color 0.3s ease;
+        }
+
+        .navbar li:hover {
+            color: #ff00ff;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #00ffff;
+        }
+
+        .section1 h1,
+        .section2 h1,
+        .section4 h1 {
+            font-size: 2.5rem;
+            color: #00ffff;
+            font-weight: 700;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .section1 p {
+            color: #ccc;
+            text-align: center;
+            padding: 0 8vw;
+            font-weight: 500;
+        }
+
+        .typing {
+            font-family: 'Orbitron', sans-serif;
+            color: #00ffff;
+            font-size: 1.2rem;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid #00ffff;
+            width: 0;
+            animation: typing 3s steps(30, end) forwards, blink 0.8s step-end infinite;
+            margin: 20px auto;
+            text-align: center;
+            max-width: 100%;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent
+            }
+        }
+
+        .box {
+            padding: 20px;
+            margin: 12px;
+            min-width: 20vw;
+            border: 2px solid #00ffff;
+            border-radius: 6px;
+            text-align: center;
+            background-color: #1a1a1a;
+            color: #fff;
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px #00ffff;
+        }
+
+        .box h2 {
+            font-size: 1.6rem;
+            padding: 10px 0;
+            color: #ff00ff;
+        }
+
+        .box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .box ul li {
+            margin: 8px 0;
+            font-weight: 500;
+        }
+
+        .highlighted {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #00ffff;
+        }
+
+        .btn-glow {
+            padding: 10px 24px;
+            border: 2px solid #00ffff;
+            background-color: transparent;
+            color: #00ffff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 0 10px #00ffff88;
+        }
+
+        .btn-glow:hover {
+            background-color: #00ffff;
+            color: #0d0d0d;
+            box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            gap: 10px;
+        }
+
+        .section2,
+        .section4 {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #999;
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+    <div class="container mx-auto">
+        <header>
+            <nav class="flex justify-between">
+                <div class="logo font-bold flex items-center text-dark">CalBot</div>
+                <ul class="navbar flex items-center">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                    <li><button class="btn-glow">Login</button></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+
+        <main class="min-h-screen">
+            <section class="section1">
+                <div class="flex flex-col justify-center items-center px-2 text-center">
+                    <h1 class="my-1">Train Minimal. Live Strong.</h1>
+                    <p>Push your limits with the most elegant, clutter-free fitness experience. Focus on what
+                        matters: strength, discipline, and consistency.</p>
+                    <p class="typing">Hi, I’m CalBot — your AI fitness assistant 🤖</p>
+                    <div class="buttons">
+                        <button class="btn-glow">Start Your Journey</button>
+                        <button class="btn-glow">Ask CalBot</button>
+                    </div>
+                </div>
+            </section>
+            <hr>
+
+            <section class="section4">
+                <h1 class="text-center my-2">What is CalBot?</h1>
+                <p class="my-2">CalBot is your AI-powered personal assistant, trained to help with personalized diet plans, smart gym routines, and reliable fitness advice.
+                    Whether you're bulking, cutting, or maintaining, CalBot's got your back with data-driven insights.
+                </p>
+                <h1 class="text-center my-2">Pricing</h1>
+                <p class="my-2">Choose a plan that suits your journey. No distractions, just results.</p>
+                <div class="boxes flex justify-center flex-wrap">
+                    <div class="box">
+                        <h2>Free</h2>
+                        <ul>
+                            <li class="highlighted">₹0/month</li>
+                            <li>20 prompts/day</li>
+                            <li>Mentor support</li>
+                            <li><button class="btn-glow">Signup</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Pro</h2>
+                        <ul>
+                            <li class="highlighted">₹299/month</li>
+                            <li>100 prompts/day</li>
+                            <li>Mentor support</li>
+                            <li><button class="btn-glow">Signup</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Enterprise</h2>
+                        <ul>
+                            <li class="highlighted">₹399/month</li>
+                            <li>150 prompts/day</li>
+                            <li>Mentor support</li>
+                            <li><button class="btn-glow">Signup</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <hr>
+        </main>
+
+        <footer>
+            © 2025 CalBot | All rights reserved
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #f0f0f0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.container {
+    max-width: 80vw;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    height: 67px;
+    align-items: center;
+}
+
+.navbar li {
+    list-style: none;
+    margin: 0 12px;
+    cursor: pointer;
+    font-weight: 700;
+    color: #00ffff;
+    transition: color 0.3s ease;
+}
+
+.navbar li:hover {
+    color: #ff00ff;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #00ffff;
+}
+
+.section1 h1, .section2 h1, .section3 h1 {
+    font-size: 2.5rem;
+    color: #00ffff;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.section2, .section3 {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section2 p, .section3 p {
+    padding: 0 8vw;
+    text-align: center;
+    color: #ccc;
+    font-weight: 500;
+}
+
+.box {
+    padding: 20px;
+    margin: 12px;
+    min-width: 20vw;
+    border: 2px solid #00ffff;
+    border-radius: 6px;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00ffff;
+}
+
+.box h2 {
+    font-size: 1.6rem;
+    padding: 10px 0;
+    color: #ff00ff;
+}
+
+.box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.box ul li {
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+.highlighted {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #00ffff;
+}
+
+.section3 table {
+    width: 100%;
+    margin: 40px 0;
+    border-collapse: collapse;
+    background-color: #1a1a1a;
+}
+
+.section3 table th, .section3 table td {
+    border: 1px solid #00ffff;
+    padding: 12px;
+    color: #f0f0f0;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 2px solid #00ffff;
+    background-color: transparent;
+    color: #00ffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #00ffff;
+    color: #0d0d0d;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+.deal {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #ff00ff;
+}
